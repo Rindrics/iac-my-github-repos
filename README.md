@@ -1,2 +1,2 @@
-# my-github-repos
+# iac-my-github-repos
 IaC of my GitHub repos
