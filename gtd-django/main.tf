@@ -17,3 +17,11 @@ terraform {
 provider "github" {
   token = var.GITHUB_TOKEN
 }
+
+resource "github_repository" "this" {
+  name         = "gtd-django"
+  description  = "trict GTD app written by Django"
+  visibility   = "public"
+  has_projects = true
+  has_issues   = true
+}
