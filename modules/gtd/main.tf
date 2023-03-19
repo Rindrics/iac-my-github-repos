@@ -1,6 +1,6 @@
 resource "github_repository" "this" {
-  name         = "gtd-django"
-  description  = "Strict GTD app written by Django"
+  name         = "gtd-${lower(var.technology)}"
+  description  = "Strict GTD app written by ${var.technology}"
   visibility   = "public"
   has_projects = true
   has_issues   = true
@@ -8,7 +8,7 @@ resource "github_repository" "this" {
 
 resource "github_issue" "add_scaffold" {
   repository = github_repository.this.name
-  title      = "Add Django scaffold"
+  title      = "Add ${var.technology} scaffold"
   body       = ""
 }
 

@@ -20,4 +20,5 @@ provider "github" {
 
 module "gtd_django" {
   source = "../../modules/gtd"
+  technology = "Django"
 }
