@@ -6,7 +6,7 @@ resource "github_repository" "this" {
   has_issues   = true
 }
 
-resource "github_issue" "django_scaffold" {
+resource "github_issue" "add_scaffold" {
   repository = github_repository.this.name
   title      = "Add Django scaffold"
   body       = ""
